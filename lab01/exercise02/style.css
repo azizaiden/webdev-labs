@@ -1,24 +1,56 @@
+
+
 body * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'The Nautigal', Arial, Helvetica, sans-serif;
 }
 
+h2, button, p{
+    margin-left: 5%;
+    margin-right: 5%;
+   }
+section{
+    border: 1px solid grey;
+    width: 25em;
+    margin-left: 2em;
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+
+img{
+   width: 100%;
+}
+
+main {
+	display: flex;
+	justify-content: space-around;
+	flew-flow: row nowrap;
+}
+
+@media only screen and (max-width: 1000px){
+	main{
+		flex-wrap: wrap;
+	}
+	section{
+		width: 20em;
+	}
+
+}
+
+@media only screen and (max-width: 600px){
+main {
+	display: flex;
+	justify-content: space-around;
+	flew-flow: column nowrap;
+}	
+
+section {
+	width: 100%;
+	}
+}
 /*
-Add some style blocks below this line to style the cards.
-Feel free to borrow from Exercise 1.
+Add some style blocks below this line to style the card.
 */
-
-
-/* Tablet Media Query */
-@media only screen and (max-width: 1000px) {
-
-}
-
-/* Mobile Phone Media Query */
-@media only screen and (max-width: 600px) {
-
-    
-}
